@@ -29,6 +29,9 @@ To set up a working development environment follow these steps:
     sudo apt install -y git
     git clone --recurse-submodules https://github.com/AllYarnsAreBeautiful/ayab-firmware.git ayab
     ```
+    If you had the repository cloned from before, you can update the submodules witout cloning with `git submodule update --init --recursive`.
+    You'll know you don't have the submodules available if your build fails by not finding Adafruit or PacketSerial from `/lib`.
+
 
  2. The AYAB firmware uses [PlatformIO](https://platform.io/) to build the binaries.
     Please [download the PlatformIO plugin](https://platformio.org/install/integration) for your favorite IDE, i.e. VSCode.
